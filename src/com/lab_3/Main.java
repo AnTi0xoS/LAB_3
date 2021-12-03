@@ -12,9 +12,9 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static boolean checkDate(String s) {  // Функция для проверки даты
-        Pattern patternFor30 = Pattern.compile("(0[1-9]|[12]\\d|30)/(0[469]|11)[/](19|[2-9]\\d)\\d{2}");
-        Pattern patternFor31 = Pattern.compile("(0[1-9]|[12]\\d|3[01])[/](0[13578]|1[02])[/](19|[2-9]\\d)\\d{2}");
-        Pattern patternForFebruary = Pattern.compile("(0[1-9]|1\\d|2[0-9])[/]02[/](19|[2-9]\\d)\\d{2}");
+        Pattern patternFor30 = Pattern.compile("(0[1-9]|[12]\\d|30)/(0[469]|11)/(19|[2-9]\\d)\\d{2}");
+        Pattern patternFor31 = Pattern.compile("(0[1-9]|[12]\\d|3[01])/(0[13578]|1[02])/(19|[2-9]\\d)\\d{2}");
+        Pattern patternForFebruary = Pattern.compile("(0[1-9]|1\\d|2[0-9])/02/(19|[2-9]\\d)\\d{2}");
 
         // patternFor30 - проверка для месяцев с 30-ю днями
         // patternFor31 - проверка для месяцев с 31-им днем
